@@ -42,6 +42,7 @@
     items.forEach((el)=> {
       el.card.addEventListener('click',()=>{
         el.card.textContent = el.value
+        el.card.classList.toggle('selected')
         count++
         let some
         currentList.push(el)
@@ -52,11 +53,11 @@
             el.card.style.pointerEvents = none
           }
           if (count % 2 === 0 && !(some.value === el.value)) {
-            console.log(12);
             setTimeout(() => {
               el.card.textContent = ''
               some.card.textContent = ''
-
+              el.card.classList.toggle('selected')
+              some.card.classList.toggle('selected')
             }, 1000);
             count -=2
             currentList.pop()

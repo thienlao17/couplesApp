@@ -8,7 +8,9 @@
 }
 
 body {
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  background: linear-gradient(45deg, #d299c2, #fef9d7);
+  overflow: hidden;
 }
 
 .appTitle {
@@ -17,10 +19,23 @@ body {
 }
 
 .cards__item {
+  border-radius: 15px;
+  border: 1px solid black;
   background-color: bisque;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .3s ease;
+}
+
+.cards__item:hover {
+  background-color: rgb(249, 215, 173);
+}
+
+.selected {
+  background: linear-gradient(180deg, #a8edea, #fed6e3);
 }
 
 .container {
