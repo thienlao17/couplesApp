@@ -29,7 +29,7 @@ body {
   justify-content: center;
   transition: all .3s ease;
 }
-
+  
 .cards__item:hover {
   background-color: rgb(249, 215, 173);
 }

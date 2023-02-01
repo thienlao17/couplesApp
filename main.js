@@ -48,7 +48,6 @@
         currentList.push(el)
         if (currentList.length>1) {
           some = currentList[count-2]
-          console.log(some);
           if (count % 2 === 1) {
             el.card.style.pointerEvents = none
           }
